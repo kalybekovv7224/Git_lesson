@@ -1,5 +1,10 @@
-void main() {
-  final int a = 10 + 5;
+import 'dart:io';
 
-  print(a);
+void main() {
+  print("Введите первое число");
+  double a = double.parse(stdin.readLineSync()!);
+  print("Введите второе число");
+  double b = double.parse(stdin.readLineSync()!);
+  print(
+      "${a + b}-Сложение\n${a - b}-Вичитание\n ${a * b}-Умножение\n ${a / b}-Деление\n");
 }
